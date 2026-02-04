@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+// Import readt and the useState hook for statement management
+import React, { useState } from 'react';
+// Import the CSS file for styling
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// Import our custom components
+import Header from './components/Header';
+import TodoList from './components/TodoList';
+import TodoForm from './components/TodoForm';
 
-export default App;
+function App() {
+  // State to hold the list of todo items
+  const [todos, setTodos] = useState([]);
+
+  // inputValue string to store current input field
+  const [inputValue, setInputValue] = useState("");
+
+  // Function updates inputValue state when user types in input field
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+}
