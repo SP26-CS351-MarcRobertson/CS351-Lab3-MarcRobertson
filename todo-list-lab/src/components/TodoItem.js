@@ -8,13 +8,14 @@ function TodoItem({ todo, onToggle, onDelete }) {
     return (
         
         <div className="todo-item">
-            // Checkbox to toggle stats
+            {/* Checkbox to toggle stats */}
             <input 
                 type="checkbox" 
                 checked={todo.completed} 
                 onChange={onToggle} 
             />
 
+            {/* Todo text with a tradition line-through styling if completed */}
             <span 
                 style={{ 
                     textDecoration: todo.completed ? 'line-through' : 'none',
@@ -24,7 +25,7 @@ function TodoItem({ todo, onToggle, onDelete }) {
             > 
             </span>
 
-            // Delete button using our reusable Button component
+            {/* Delete button using our reusable Button component */}
             <Button
                 text='Delete'
                 onClick={onDelete} 
