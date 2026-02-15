@@ -23,6 +23,7 @@ function TodoItem({ todo, onToggle, onDelete }) {
                     marginRight: '10px'
                 }}
             > 
+                {todo.text}
             </span>
 
             {/* Delete button using our reusable Button component */}

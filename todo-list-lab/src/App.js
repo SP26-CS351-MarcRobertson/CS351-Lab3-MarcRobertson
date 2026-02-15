@@ -89,8 +89,8 @@ function App() {
           <ToDoItem
             key={todo.id}
             todo={todo}
-            onToggleTodo={() => toggleTodo(todo.id)}
-            onDeleteTodo={() => deleteTodo(todo.id)}
+            onToggle={() => toggleTodo(todo.id)}
+            onDelete={() => deleteTodo(todo.id)}
           />
         ))}
       </div>
