@@ -1,7 +1,7 @@
 # Todo List Lab
 
 **Author:** Marc Robertson  
-**Last Updated:** 2026-02-21  
+**Last Updated:** 2026-02-15  
 **Brief Description:** A simple React app for creating, completing, and removing todo items.
 
 A simple React todo list app for CS351 Lab 3.
